@@ -87,7 +87,7 @@
     width: 2em;
 }
 
-.top{
+.header > .top{
     display: grid;
     grid-template-columns: 3fr 1.5fr;
     gap: 6rem;
@@ -141,6 +141,7 @@
     height: 2.5rem;
     border: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .contents{
@@ -163,12 +164,21 @@
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: 2px 2px 5px -2px gray;
+    height: 12rem;
 }
 
 .cards > .card > div{
     display: flex;
     justify-content: end;
     margin-top: 15px;
+}
+
+.card > div > img{
+    cursor: pointer;
+}
+
+.card > div > img:hover{
+    transform: scale(1.2);
 }
 
 .cards > .card > h3{
@@ -185,4 +195,88 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 1.5rem;
+}
+
+.contents > .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.contents > .right > .top{
+    align-items: start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contents > .right > .top > .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #dbeafe;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px -2px gray;
+}
+
+.contents > .right > .top > .card > *{
+    margin: 1rem;
+}
+
+.contents > .right > .top > .card > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contents > .right > .top > .card > div > h4{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.contents > .right >  p{
+    color: rgb(25, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+hr{
+    width: 80%;
+    display: flex;
+    align-self: center;
+    margin: 0!important;
+}
+
+.contents > .right > .bottom{
+    margin-top: 1rem;
+    background-color: #dbeafe;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px -2px gray;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.contents > .right > .bottom > .profile > img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 60%;
+}
+
+.contents > .right > .bottom > .profile{
+    display: flex;
+    align-items: center;
+}
+
+.contents > .right > .bottom > .profile > div > p{
+    font-weight: bold
+}
+
+.contents > .right > .bottom > .profile > div> span{
+    font-family: sans-serif;
+}
+
+.contents > .right > .bottom > .profile > *{
+    margin: 0 .5rem;
+    
 }
